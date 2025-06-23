@@ -9,8 +9,8 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'home1',
-        pathMatch: 'full',
+        loadChildren: () =>
+          import('./home5/home5.module').then((m) => m.Home5Module),
       },
       {
         path: 'home1',
