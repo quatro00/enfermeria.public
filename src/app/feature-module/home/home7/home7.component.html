@@ -1,0 +1,830 @@
+<app-header></app-header>
+
+<!-- Home Banner -->
+<section class="banner-section-fourteen banner-section-twelve">
+    <div class="banner-section-twelve-bg">
+        <img src="assets/img/bg/home-12-banner-bg-1.png" alt="design-image">
+        <img src="assets/img/bg/home-12-banner-bg-2.png" alt="design-image">
+    </div>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-lg-6">
+                <div class="banner-img banner-img-twelve aos" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="assets/img/bg/home-12-banner-1.png" class="img-fluid" alt="dog-image">
+                    <img src="assets/img/bg/home-12-banner-2.png" class="img-fluid" alt="cat-image">
+                    <div class="banner-banner-img-twelve-bg">
+                        <img src="assets/img/bg/dot-1.png" alt="dot-icon">
+                        <img src="assets/img/bg/dot-2.png" alt="dot-icon">
+                        <img src="assets/img/bg/ring-1.png" alt="ring-icon">
+                        <img src="assets/img/bg/ring-2.png" alt="ring-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="banner-content banner-content-fourteen aos" data-aos="fade-up" data-aos-duration="2000">
+                    <h1>We take care <span>of Your Pets</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    <div class="banner-btns-fourteen ">
+                        <a [routerLink] = "routes.booking1" class="btn btn-primary me-2">Start a Consult</a>
+                        <a [routerLink] = "routes.booking1" class="btn btn-primary ">Schedule a Call</a>
+                    </div>
+                </div>
+                <div class="search-box-fourteen aos" data-aos="fade-up" data-aos-duration="2000">
+                    <form class="form-block d-flex">
+                        <div class="search-input">
+                            <div class="forms-block">
+                                <label class="mb-0" for="date">Date</label>
+                                <input type="text"
+                                class="form-control"
+                                #dp="bsDatepicker"
+                                bsDatepicker [(bsValue)]="myDateValue">
+                            </div>
+                        </div>
+                        <div class="search-input">											
+                            <div class="forms-block mb-0">
+                                <label class="location-icon" for="location">Location</label>
+                                <input type="text" class="form-control" placeholder="San Diego Branch">
+                            </div>
+                        </div>
+                        <div class="search-btn">
+                            <button class="btn btn-primary" type="button" (click)="navigation()" (keydown)="navigation()" tabindex="1" >Book Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Home Banner -->
+
+<!-- services Section -->
+<section class="services-section-fourteen">
+    <div class="floating-bg">
+        <img src="assets/img/bg/big-paw.png" alt="paw-image" >
+        <img src="assets/img/bg/small-paw.png" alt="paw-image" >
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 aos" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section-header-fourteen service-inner-fourteen">
+                    <div class="service-inner-fourteen">
+                        <div class="service-inner-fourteen-two">
+                            <h3>OUR SERVICES</h3>
+                        </div>
+                    </div>
+                    <h2>What can We do</h2>
+                    <p>Our Professional Services</p>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="row row-gap justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-12 d-flex">
+                <div class="our-services-list w-100">
+                    <div class="service-icon">
+                        <img src="assets/img/icons/injection.svg" alt="injection-icon">
+                    </div>
+                    <h4>Vaccination</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 d-flex">
+                <div class="our-services-list w-100">
+                    <div class="service-icon">
+                        <img src="assets/img/icons/bottel.svg" alt="bottel-icon">
+                    </div>
+                    <h4>Pet Medicine</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 d-flex">
+                <div class="our-services-list w-100">
+                    <div class="service-icon">
+                        <img src="assets/img/icons/bath-tub.svg" alt="pet-grooming-icon">
+                    </div>
+                    <h4>Pet Grooming</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 d-flex">
+                <div class="our-services-list w-100">
+                    <div class="service-icon">
+                        <img src="assets/img/icons/pet-doctor.svg" alt="stethoscope-icon">
+                    </div>
+                    <h4>Pet Care</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /services Section -->
+
+<!-- Our Doctors -->
+<div class="blog-section-fourteen our-doctor-twelve">
+    <div class="floating-bg">
+        <img src="assets/img/bg/small-paw.png" alt="paw-image" >
+        <img src="assets/img/bg/big-paw.png" alt="paw-image" >
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-header-fourteen service-inner-fourteen">
+                    <div class="service-inner-fourteen">
+                        <div class="service-inner-fourteen-two">
+                            <h3>OUR TEAM</h3>
+                        </div>
+                    </div>
+                    <h2>Meet Our Doctors</h2>
+                    <p>Our Qualified Professionals</p>
+                </div>
+            </div>					
+        </div>
+        <div class="blog-slider-twelve owl-theme aos" data-aos="fade-up" data-aos-duration="2000">
+            <owl-carousel-o [options]="blogSliderOptions">
+                <ng-template carouselSlide>
+                <div class="card blog-inner-fourt-all">
+                    <div class="card-body blog-inner-fourt-main">
+                        <div class="blog-inner-right-fourt">
+                            <a [routerLink] = "routes.doctorProfile">
+                                <div class="blog-inner-right-img">
+                                    <img src="assets/img/doctors/veterinary-doctor-01.jpg" alt="image" class="img-fluid ">
+                                    <div class="blog-inner-top-content content-pricing">
+                                        <span>$ 200</span>
+                                    </div>
+                                    <div class="blog-inner-top-content">
+                                        <span>Veterinarian</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <h4 class="blog-inner-right-fourt-care">
+                            <a [routerLink] = "routes.doctorProfile" >Dr. Marie Wells</a>
+                            </h4>
+                            <ul class="articles-list nav blog-articles-list">
+                                <li>
+                                    <i class="fa fa-location-dot"></i> <strong>0.9</strong> min - New York, USA
+                                </li>
+                                
+                            </ul>
+                            <div class="blog-list-ratings">
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(20)</span>
+                            </div>
+                            <a [routerLink] = "routes.booking1" class="btn btn-primary">Consult</a>
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="card blog-inner-fourt-all">
+                    <div class="card-body blog-inner-fourt-main">
+                        <div class="blog-inner-right-fourt">
+                            <a [routerLink] = "routes.doctorProfile">
+                                <div class="blog-inner-right-img">
+                                    <img src="assets/img/doctors/veterinary-doctor-02.jpg" alt="image" class="img-fluid ">
+                                    <div class="blog-inner-top-content content-pricing">
+                                        <span>$ 150</span>
+                                    </div>
+                                    <div class="blog-inner-top-content">
+                                        <span>Pet Care Specialist</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <h4 class="blog-inner-right-fourt-care">
+                            <a [routerLink] = "routes.doctorProfile" >Dr. Justin Parker</a>
+                            </h4>
+                            <ul class="articles-list nav blog-articles-list">
+                                <li>
+                                    <i class="fa fa-location-dot"></i> <strong>2</strong> hrs - Chicago, USA
+                                </li>
+                                
+                            </ul>
+                            <div class="blog-list-ratings">
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(22)</span>
+                            </div>
+                            <a [routerLink] = "routes.booking1" class="btn btn-primary">Consult</a>
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="card blog-inner-fourt-all">
+                    <div class="card-body blog-inner-fourt-main">
+                        <div class="blog-inner-right-fourt">
+                            <a [routerLink] = "routes.doctorProfile">
+                                <div class="blog-inner-right-img">
+                                    <img src="assets/img/doctors/veterinary-doctor-03.jpg" alt="image" class="img-fluid ">
+                                    <div class="blog-inner-top-content content-pricing">
+                                        <span>$ 110</span>
+                                    </div>
+                                    <div class="blog-inner-top-content">
+                                        <span>Veterinarian</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <h4 class="blog-inner-right-fourt-care">
+                            <a [routerLink] = "routes.doctorProfile" >Dr. Pamela Curtis</a>
+                            </h4>
+                            <ul class="articles-list nav blog-articles-list">
+                                <li>
+                                    <i class="fa fa-location-dot"></i> <strong>0.8</strong> min - Sandiago, USA
+                                </li>
+                                
+                            </ul>
+                            <div class="blog-list-ratings">
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(30)</span>
+                            </div>
+                            <a [routerLink] = "routes.booking1" class="btn btn-primary">Consult</a>
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="card blog-inner-fourt-all">
+                    <div class="card-body blog-inner-fourt-main">
+                        <div class="blog-inner-right-fourt">
+                            <a [routerLink] = "routes.doctorProfile">
+                                <div class="blog-inner-right-img">
+                                    <img src="assets/img/doctors/veterinary-doctor-04.jpg" alt="image" class="img-fluid ">
+                                    <div class="blog-inner-top-content content-pricing">
+                                        <span>$ 50</span>
+                                    </div>
+                                    <div class="blog-inner-top-content">
+                                        <span>Veterinarian</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <h4 class="blog-inner-right-fourt-care">
+                            <a [routerLink] = "routes.doctorProfile" >Dr.Ronald Jacobs</a>
+                            </h4>
+                            <ul class="articles-list nav blog-articles-list">
+                                <li>
+                                    <i class="fa fa-location-dot"></i> <strong>10</strong> min - Texas, USA
+                                </li>
+                                
+                            </ul>
+                            <div class="blog-list-ratings">
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(45)</span>
+                            </div>
+                            <a [routerLink] = "routes.booking1" class="btn btn-primary">Consult</a>
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="card blog-inner-fourt-all">
+                    <div class="card-body blog-inner-fourt-main">
+                        <div class="blog-inner-right-fourt">
+                            <a [routerLink] = "routes.doctorProfile">
+                                <div class="blog-inner-right-img">
+                                    <img src="assets/img/doctors/veterinary-doctor-01.jpg" alt="image" class="img-fluid ">
+                                    <div class="blog-inner-top-content content-pricing">
+                                        <span>$ 200</span>
+                                    </div>
+                                    <div class="blog-inner-top-content">
+                                        <span>Veterinarian</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <h4 class="blog-inner-right-fourt-care">
+                            <a [routerLink] = "routes.doctorProfile" >Dr. Marie Wells</a>
+                            </h4>
+                            <ul class="articles-list nav blog-articles-list">
+                                <li>
+                                    <i class="fa fa-location-dot"></i> <strong>0.9</strong> min - New York, USA
+                                </li>
+                                
+                            </ul>
+                            <div class="blog-list-ratings">
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star rated"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span>(20)</span>
+                            </div>
+                            <a [routerLink] = "routes.booking1" class="btn btn-primary">Consult</a>
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+        <div class="owl-nav slide-nav-16 text-end nav-control"></div>
+        
+        <div class="blog-btn-sec text-center aos aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+            <a [routerLink] = "routes.search1" class="btn btn-primary btn-view">See All Doctors</a>
+        </div>
+    </div>
+</div>
+<!-- /Our Doctors -->
+
+<!-- Feedback -->
+<section class="clients-section-fourteen">
+    <div class="floating-bg">
+        <img src="assets/img/bg/two-paw.png" alt="paw-image" >
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="client-inner-main">
+                    <img src="assets/img/bg/home-12-testimonial.png" alt="image" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="section-header-fourteen service-inner-fourteen">
+                    <div class="service-inner-fourteen">
+                        <div class="service-inner-fourteen-two">
+                            <h3>CLIENT REVIEWS</h3>
+                        </div>
+                    </div>
+                    <h2>Testimonials</h2>
+                    <p>What our customers says about us</p>
+                </div>
+                <div class="feedback-slider-fourteen owl-theme aos" data-aos="fade-up" data-aos-duration="2000">
+                    <owl-carousel-o [options]="feedbackSliderOptions">
+                        <ng-template carouselSlide>
+                        <div class="card feedback-card">
+                            <div class="card-body feedback-card-body">
+                                <div class="feedback-inner-main">
+                                    <div class="feedback-inner-img">
+                                        <img src="assets/img/clients/client-10.jpg" alt="image" class="img-fluid">
+                                        <div class="feedback-user-details">
+                                            <h4>Jenifer Robinson</h4>
+                                            <h6>Texas, USA</h6>
+                                            <div class="rating rating-fourteen">
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p>“Thank you! for giving excellent care of my doggies, the best pet care ever! I recommend”
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                        <div class="card feedback-card">
+                            <div class="card-body feedback-card-body">
+                                <div class="feedback-inner-main">
+                                    <div class="feedback-inner-img">
+                                        <img src="assets/img/clients/client-09.jpg" alt="image" class="img-fluid">
+                                        <div class="feedback-user-details">
+                                            <h4>Ronald Jacobs</h4>
+                                            <h6>Texas, USA</h6>
+                                            <div class="rating rating-fourteen">
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <p>“Thank you! for giving excellent care of my doggies, the best pet care ever! I recommend”
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </ng-template>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Feedback -->
+
+<!-- Pricing -->
+<section class="home-twelve-pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 aos" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section-header-fourteen service-inner-fourteen">
+                    <div class="service-inner-fourteen">
+                        <div class="service-inner-fourteen-two">
+                            <h3>OUR PACKAGES</h3>
+                        </div>
+                    </div>
+                    <h2>Our Pricing Plan</h2>
+                    <p>Our Special Package</p>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="row row-gap justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="price-card-twelve">
+                    <div class="price-bg">
+                        <img src="assets/img/bg/home-12-pricing-bg-4.png" alt="design-image">
+                        <img src="assets/img/bg/home-12-pricing-bg-5.png" alt="design-image">
+                        <img src="assets/img/bg/home-12-pricing-bg-3.png" alt="design-image">
+                    </div>
+                    <div class="price-content">
+                        <div class="card-title">
+                            <h3>Friendly Pack</h3>
+                        </div>
+                        <div class="price">
+                            <h2><sup>$</sup> 150 / <span>Visit</span></h2>
+                        </div>
+                        <div class="pack-details">
+                            <ul>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Basic Checkup
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Grooming
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Pet Shower
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Vaccination
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-btn">
+                            <a [routerLink] = "routes.pricing" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="price-card-twelve active">
+                    <div class="price-bg">
+                        <img src="assets/img/bg/home-12-pricing-bg-4.png" alt="design-image">
+                        <img src="assets/img/bg/home-12-pricing-bg-5.png" alt="design-image">
+                        <img src="assets/img/bg/home-12-pricing-bg-3.png" alt="design-image">
+                    </div>
+                    <div class="price-content">
+                        <div class="card-title">
+                            <h3>Exclusive Pack</h3>
+                            <span>Best Offer</span>
+                        </div>
+                        <div class="price">
+                            <h2><sup>$</sup> 175 / <span>Visit</span></h2>
+                        </div>
+                        <div class="pack-details">
+                            <ul>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Basic Checkup
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Grooming
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Pet Shower
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Vaccination
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Hair fall Pack
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>30 day Services
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-btn">
+                            <a [routerLink] = "routes.pricing" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="price-card-twelve">
+                    <div class="price-bg">
+                        <img src="assets/img/bg/home-12-pricing-bg-4.png" alt="design-image">
+                        <img src="assets/img/bg/home-12-pricing-bg-5.png" alt="design-image">
+                        <img src="assets/img/bg/home-12-pricing-bg-3.png" alt="design-image">
+                    </div>
+                    <div class="price-content">
+                        <div class="card-title">
+                            <h3>Family Pack</h3>
+                        </div>
+                        <div class="price">
+                            <h2><sup>$</sup> 200 / <span>Visit</span></h2>
+                        </div>
+                        <div class="pack-details">
+                            <ul>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>30 day Services
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Grooming
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Pet Shower
+                                </li>
+                                <li>
+                                    <i class="feather icon-check-circle"></i>Vaccination
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-btn">
+                            <a [routerLink] = "routes.pricing" class="btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Pricing -->
+
+
+<!-- blog section -->
+<div class="blog-section-fourteen">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-header-fourteen service-inner-fourteen">
+                    <div class="service-inner-fourteen">
+                        <div class="service-inner-fourteen-two">
+                            <h3>BLOG</h3>
+                        </div>
+                    </div>
+                    <h2>Our Blogs</h2>
+                    <p>Our Recent Articles</p>
+                </div>
+            </div>						
+        </div>
+        <div class="blog-slider-fourteen owl-theme aos" data-aos="fade-up" data-aos-duration="2000">
+            <owl-carousel-o [options]="blogSliderFourteen">
+                <ng-template carouselSlide>
+                <div class="card blog-inner-fourt-all">
+                    <div class="card-body blog-inner-fourt-main">
+                        <div class="blog-inner-right-fourt">
+                            <a [routerLink] = "routes.blogDetails">
+                                <div class="blog-inner-right-img">
+                                    <img src="assets/img/blog/veterinary-blog-01.jpg" alt="image" class="img-fluid ">
+                                    <div class="blog-inner-top-content">
+                                        <img src="assets/img/doctors/doctor-04.jpg" alt="Pamila Certis" class="me-2">
+                                        <span>Dr. Pamila Certis</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a [routerLink] = "routes.blogDetails" class="blog-inner-right-fourt-care">What You Might Not Know About The Best Dog Food in India</a>
+                            <ul class="articles-list nav blog-articles-list">
+                                <li>
+                                    <i class="feather icon-calendar"></i> 13 Aug, 2023
+                                </li>
+                                <li>
+                                    <i class="feather icon-message-square"></i> 68
+                                </li>
+                                <li>
+                                    <i class="feather icon-eye"></i> 1.5k
+                                </li>
+                            </ul>
+                            <ul class="articles-list nav blog-articles-list-two">
+                                <li>Dog</li>
+                                <li>Health</li>
+                                <li>Diet Foods</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  ad minim veniam, quis magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="card blog-inner-fourt-all">
+                    <div class="card-body blog-inner-fourt-main">
+                        <div class="blog-inner-right-fourt">
+                            <a [routerLink] = "routes.blogDetails">
+                                <div class="blog-inner-right-img">
+                                    <img src="assets/img/blog/veterinary-blog-02.jpg" alt="image" class="img-fluid ">
+                                    <div class="blog-inner-top-content">
+                                        <img src="assets/img/doctors/doctor-07.jpg" alt="James Matthew" class="me-2">
+                                        <span>Dr. James Matthew</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a [routerLink] = "routes.blogDetails" class="blog-inner-right-fourt-care">How to Care for Rabbits in the Winter</a>
+                            <ul class="articles-list nav blog-articles-list">
+                                <li>
+                                    <i class="feather icon-calendar"></i> 13 Apr, 2023
+                                </li>
+                                <li>
+                                    <i class="feather icon-message-square"></i> 87
+                                </li>
+                                <li>
+                                    <i class="feather icon-eye"></i> 2.5k
+                                </li>
+                            </ul>
+                            <ul class="articles-list nav blog-articles-list-two">
+                                <li>Pet Care</li>
+                                <li>Rabbit</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  ad minim veniam, quis magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+                </ng-template> 
+                <ng-template carouselSlide>
+                <div class="card blog-inner-fourt-all">
+                    <div class="card-body blog-inner-fourt-main">
+                        <div class="blog-inner-right-fourt">
+                            <a [routerLink] = "routes.blogDetails">
+                                <div class="blog-inner-right-img">
+                                    <img src="assets/img/blog/veterinary-blog-03.jpg" alt="image" class="img-fluid ">
+                                    <div class="blog-inner-top-content">
+                                        <img src="assets/img/doctors/doctor-06.jpg" alt="James Certis" class="me-2">
+                                        <span>Dr. James Certis</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a [routerLink] = "routes.blogDetails" class="blog-inner-right-fourt-care">Why Cat Scratches?</a>
+                            <ul class="articles-list nav blog-articles-list">
+                                <li>
+                                    <i class="feather icon-calendar"></i> 26 May, 2023
+                                </li>
+                                <li>
+                                    <i class="feather icon-message-square"></i> 78
+                                </li>
+                                <li>
+                                    <i class="feather icon-eye"></i> 1.6k
+                                </li>
+                            </ul>
+                            <ul class="articles-list nav blog-articles-list-two">
+                                <li>Cat</li>
+                                <li>Cat Scratcher</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  ad minim veniam, quis magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="card blog-inner-fourt-all">
+                    <div class="card-body blog-inner-fourt-main">
+                        <div class="blog-inner-right-fourt">
+                            <a [routerLink] = "routes.blogDetails">
+                                <div class="blog-inner-right-img">
+                                    <img src="assets/img/blog/veterinary-blog-01.jpg" alt="image" class="img-fluid ">
+                                    <div class="blog-inner-top-content">
+                                        <img src="assets/img/doctors/doctor-04.jpg" alt="Pamila Certis" class="me-2">
+                                        <span>Dr. Pamila Certis</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a [routerLink] = "routes.blogDetails" class="blog-inner-right-fourt-care">What You Might Not Know About The Best Dog Food in India</a>
+                            <ul class="articles-list nav blog-articles-list">
+                                <li>
+                                    <i class="feather icon-calendar"></i> 13 Aug, 2023
+                                </li>
+                                <li>
+                                    <i class="feather icon-message-square"></i> 68
+                                </li>
+                                <li>
+                                    <i class="feather icon-eye"></i> 1.5k
+                                </li>
+                            </ul>
+                            <ul class="articles-list nav blog-articles-list-two">
+                                <li>Dog</li>
+                                <li>Health</li>
+                                <li>Diet Foods</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  ad minim veniam, quis magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+        <div class="owl-nav slide-nav-15 text-end nav-control"></div>
+        <div class="blog-btn-sec text-center aos aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+            <a [routerLink] = "routes.search1" class="btn btn-primary btn-view">Read More Articles</a>
+        </div>
+    </div>
+</div>
+<!-- /blog section -->
+
+<!-- Choose us -->
+<section class="choose-us-fourteen">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header-fourteen text-center">
+                    <div class="service-inner-fourteen justify-content-center">
+                        <div class="service-inner-fourteen-two">
+                            <h3>Why Us</h3>
+                        </div>
+                    </div>
+                    <h2>Why Choose Us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        
+            <div class="col-lg-6">
+                <div class="choose-us-right-main">
+                    <img src="assets/img/bg/home-12-why-us.png" alt="image" class="img-fluid">
+                    
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="why-us-content">
+                    <div class="us-faq aos" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Lorem ipsum dolor sit amet
+                                </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse shade show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Lorem ipsum dolor sit amet
+                                </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse shade" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Lorem ipsum dolor sit amet
+                                </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse shade" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Lorem ipsum dolor sit amet
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse shade" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Lorem ipsum dolor sit amet
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse shade" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Choose us -->
+
+<app-footer></app-footer>

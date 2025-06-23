@@ -1,0 +1,476 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb-bar-two">
+    <div class="container">
+        <div class="row align-items-center inner-banner">
+            <div class="col-md-12 col-12 text-center">
+                <h2 class="breadcrumb-title">Dashboard</h2>
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a [routerLink] = "routes.home1">Home</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Dashboard</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Breadcrumb -->
+
+<!-- Page Content -->
+<div class="content">
+    <div class="container">
+
+        <div class="row">
+            
+            <!-- Profile Sidebar -->
+            <div class="col-md-5 col-lg-4 col-xl-3">
+                <div class="stickybar">
+                <div class="profile-sidebar">
+                    <div class="widget-profile pro-widget-content">
+                        <div class="profile-info-widget">
+                            <a href="javascript:void(0)" class="booking-doc-img">
+                                <img src="assets/img/patients/patient.jpg" alt="User Image">
+                            </a>
+                            <div class="profile-det-info">
+                                <h3>Richard Wilson</h3>
+                                <div class="patient-details">
+                                    <h5><i class="fas fa-birthday-cake"></i> 24 Jul 1983, 38 years</h5>
+                                    <h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, USA</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-widget">
+                        <nav class="dashboard-menu">
+                            <ul>
+                                <li class="active">
+                                    <a [routerLink] = "routes.patientDashboard">
+                                        <i class="fas fa-columns"></i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a [routerLink] = "routes.favourites">
+                                        <i class="fas fa-bookmark"></i>
+                                        <span>Favourites</span>
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a [routerLink] = "routes.dependentList">
+                                        <i class="fas fa-users"></i>
+                                        <span>Dependent</span>
+                                    </a>
+                                </li> 
+                                <li>
+                                    <a [routerLink] = "routes.chat">
+                                        <i class="fas fa-comments"></i>
+                                        <span>Message</span>
+                                        <small class="unread-msg">23</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a [routerLink] = "routes.patientAccounts">
+                                        <i class="fas fa-file-invoice-dollar"></i>
+                                        <span>Accounts</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a [routerLink] = "routes.ordersList">
+                                        <i class="fas fa-list-alt"></i>
+                                        <span>Orders</span>
+                                        <small class="unread-msg">7</small>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a [routerLink] = "routes.medicalRecords">
+                                        <i class="fas fa-clipboard"></i>
+                                        <span>Add Medical Records</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a [routerLink] = "routes.medicalDetails">
+                                        <i class="fas fa-file-medical-alt"></i>
+                                        <span>Medical Details</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a [routerLink] = "routes.profileSettings">
+                                        <i class="fas fa-user-cog"></i>
+                                        <span>Profile Settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a [routerLink] = "routes.patientsChangePassword">
+                                        <i class="fas fa-lock"></i>
+                                        <span>Change Password</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a [routerLink] = "routes.userLogin">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+            <!-- / Profile Sidebar -->
+            
+            <div class="col-md-7 col-lg-8 col-xl-9">
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 patient-dashboard-top">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <img src="assets/img/specialities/pt-dashboard-01.png" alt="heart-image" width="55">
+                                </div>
+                                <h5>Heart Rate</h5>
+                                <h6>12 <sub>bpm</sub></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 patient-dashboard-top">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <img src="assets/img/specialities/pt-dashboard-02.png" alt="thermometer-image" width="55">
+                                </div>
+                                <h5>Body Temperature</h5>
+                                <h6>18 <sub>C</sub></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 patient-dashboard-top">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <img src="assets/img/specialities/pt-dashboard-03.png" alt="hospital-equipment" width="55">
+                                </div>
+                                <h5>Glucose Level</h5>
+                                <h6>70 - 90</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 patient-dashboard-top">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="mb-3">
+                                    <img src="assets/img/specialities/pt-dashboard-04.png" alt="hospital-equipment" width="55">
+                                </div>
+                                <h5>Blood Pressure</h5>
+                                <h6>202/90 <sub>mg/dl</sub></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row patient-graph-col">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Graph Status</h4>
+                            </div>
+                            <div class="card-body pt-2 pb-2 mt-1 mb-1">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 patient-graph-box">
+                                        <a class="graph-box" data-bs-toggle="modal" data-bs-target="#graph1">
+                                            <div>
+                                                <h4>BMI Status</h4>
+                                            </div>
+                                            <div class="graph-img">
+                                                <img src="assets/img/shapes/graph-01.png" alt="shapes-icon">
+                                            </div>
+                                            <div class="graph-status-result mt-3">
+                                                <span class="graph-update-date">Last Update 6d</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 patient-graph-box">
+                                            <a id="chart-container" class="graph-box pink-graph" data-bs-toggle="modal" data-bs-target="#graph2">
+                                                <div>
+                                                    <h4>Heart Rate Status</h4>
+                                                </div>
+                                                <div class="graph-img">
+                                                    <img src="assets/img/shapes/graph-02.png" alt="graph-icon">
+                                                </div>
+                                                <div class="graph-status-result mt-3">
+                                                    <span class="graph-update-date">Last Update 2d</span>
+                                                </div>
+                                            </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 patient-graph-box">
+                                        <a id="chart-container" class="graph-box sky-blue-graph" data-bs-toggle="modal" data-bs-target="#graph3">
+                                            <div>
+                                                <h4>FBC Status</h4>
+                                            </div>
+                                            <div class="graph-img">
+                                                <img src="assets/img/shapes/graph-03.png" alt="chart-icon">
+                                            </div>
+                                            <div class="graph-status-result mt-3">
+                                                <span class="graph-update-date">Last Update 5d</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 patient-graph-box">
+                                        <a  id="chart-container"class="graph-box orange-graph" data-bs-toggle="modal" data-bs-target="#graph4">
+                                            <div>
+                                                <h4>Weight Status</h4>
+                                            </div>
+                                            <div class="graph-img">
+                                                <img src="assets/img/shapes/graph-04.png" alt="chart-icon">
+                                            </div>
+                                            <div class="graph-status-result mt-3">
+                                                <span class="graph-update-date">Last Update 3d</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body pt-0">
+                    
+                        <!-- Tab Menu -->
+                        <nav class="user-tabs mb-4">
+                            <ul class="nav nav-tabs nav-tabs-bottom nav-justified">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#pat_appointments" data-bs-toggle="tab">Appointments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pat_prescriptions" data-bs-toggle="tab">Prescriptions</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pat_medical_records" data-bs-toggle="tab"><span class="med-records">Medical Records</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pat_billing" data-bs-toggle="tab">Billing</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- /Tab Menu -->
+                        
+                        <!-- Tab Content -->
+                        <div class="tab-content pt-0">
+                            
+                            <!-- Appointment Tab -->
+                            <div id="pat_appointments" class="tab-pane fade show active">
+                                <div class="card card-table mb-0">
+                                    <div class="card-body user">
+                                        <div class="table-responsive header-space">
+                                            <app-pagination-header></app-pagination-header>
+                                            <table matSort (matSortChange)="sortData($event)" class="table table-hover table-center mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th mat-sort-header="doctor">Doctor</th>
+                                                        <th mat-sort-header="apptDate">Appt Date</th>
+                                                        <th mat-sort-header="bookingDate">Booking Date</th>
+                                                        <th mat-sort-header="amount">Amount</th>
+                                                        <th mat-sort-header="followUp">Follow Up</th>
+                                                        <th mat-sort-header="status">Status</th>
+                                                        <th mat-sort-header="action">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr  *ngFor = "let data of tableData">
+                                                        <td>
+                                                            <h2 class="table-avatar">
+                                                                <a [routerLink] = "routes.doctorProfile" class="avatar avatar-sm me-2">
+                                                                    <img class="avatar-img rounded-circle" [src]="data.img" alt="User Image">
+                                                                </a>
+                                                                <a [routerLink] = "routes.doctorProfile">{{data.doctor}} <span>{{data.specialist}}</span></a>
+                                                            </h2>
+                                                        </td>
+                                                        <td>{{data.apptDate}} <span class="d-block text-info">{{data.apptTime}}</span></td>
+                                                        <td>{{data.bookingDate}}</td>
+                                                        <td>{{data.amount}}</td>
+                                                        <td>{{data.followUp}}</td>
+                                                        <td><span class="badge rounded-pill" [ngClass]="{'bg-warning-light': data.status === 'Pending', 'bg-success-light': data.status === 'Confirm', 'bg-danger-light': data.status === 'Cancelled'}">{{data.status}}</span></td>
+                                                        <td>
+                                                            <div class="table-action">
+                                                                <a href="javascript:void(0);" class="btn btn-sm bg-primary-light me-1">
+                                                                    <i class="fas fa-print"></i> {{data.action1}}
+                                                                </a>
+                                                                <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                                                    <i class="far fa-eye"></i> {{data.action2}}
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <app-custom-pagination></app-custom-pagination>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Appointment Tab -->
+                            
+                            <!-- Prescription Tab -->
+                            <div class="tab-pane fade" id="pat_prescriptions">
+                                <div class="card card-table mb-0">
+                                    <div class="card-body">
+                                        <div class="table-responsive header-space">
+                                            <app-pagination-header></app-pagination-header>
+                                            <table matSort (matSortChange)="sortData($event)" class="table table-hover table-center mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th mat-sort-header="date">Date </th>
+                                                        <th mat-sort-header="name">Name</th>									
+                                                        <th mat-sort-header="createdBy">Created by </th>
+                                                        <th mat-sort-header="action">Action</th>
+                                                    </tr>     
+                                                </thead>
+                                                <tbody>
+                                                    <tr  *ngFor = "let data of tableData2">
+                                                        <td>{{data.date}}</td>
+                                                        <td>{{data.name}}</td>
+                                                        <td>
+                                                            <h2 class="table-avatar">
+                                                                <a [routerLink] = "routes.doctorProfile" class="avatar avatar-sm me-2">
+                                                                    <img class="avatar-img rounded-circle" [src]="data.img" alt="User Image">
+                                                                </a>
+                                                                <a [routerLink] = "routes.doctorProfile">{{data.createdBy}} <span>{{data.specialist}}</span></a>
+                                                            </h2>
+                                                        </td>
+                                                        <td>
+                                                            <div class="table-action">
+                                                                <a href="javascript:void(0);" class="btn btn-sm bg-primary-light me-1">
+                                                                    <i class="fas fa-print"></i> {{data.action1}}
+                                                                </a>
+                                                                <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                                                    <i class="far fa-eye"></i> {{data.action2}}
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>	
+                                            </table>
+                                        </div>
+                                        <app-custom-pagination></app-custom-pagination>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Prescription Tab -->
+                                
+                            <!-- Medical Records Tab -->
+                            <div id="pat_medical_records" class="tab-pane fade">
+                                <div class="card card-table mb-0">
+                                    <div class="card-body">
+                                        <div class="table-responsive header-space">
+                                            <app-pagination-header></app-pagination-header>
+                                            <table matSort (matSortChange)="sortData($event)" class="table table-hover table-center mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th mat-sort-header="id">ID</th>
+                                                        <th mat-sort-header="date">Date </th>
+                                                        <th mat-sort-header="description">Description</th>
+                                                        <th mat-sort-header="attachment">Attachment</th>
+                                                        <th mat-sort-header="created">Created</th>
+                                                        <th mat-sort-header="action">Action</th>
+                                                    </tr>     
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor = "let data of tableData3">
+                                                        <td><a href="javascript:void(0);">{{data.id}}</a></td>
+                                                        <td>{{data.date}}</td>
+                                                        <td>{{data.description}}</td>
+                                                        <td><a href="javascript:void(0)">{{data.attachment}}</a></td>
+                                                        <td>
+                                                            <h2 class="table-avatar">
+                                                                <a [routerLink] = "routes.doctorProfile" class="avatar avatar-sm me-2">
+                                                                    <img class="avatar-img rounded-circle" [src]="data.img" alt="User Image">
+                                                                </a>
+                                                                <a [routerLink] = "routes.doctorProfile">{{data.created}} <span>{{data.specialist}}</span></a>
+                                                            </h2>
+                                                        </td>
+                                                        <td>
+                                                            <div class="table-action">
+                                                                <a href="javascript:void(0);" class="btn btn-sm bg-info-light me-1">
+                                                                    <i class="far fa-eye"></i> {{data.action1}}
+                                                                </a>
+                                                                <a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+                                                                    <i class="fas fa-print"></i> {{data.action2}}
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>  	
+                                            </table>
+                                        </div>
+                                        <app-custom-pagination></app-custom-pagination>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Medical Records Tab -->
+                            
+                            <!-- Billing Tab -->
+                            <div id="pat_billing" class="tab-pane fade">
+                                <div class="card card-table mb-0">
+                                    <div class="card-body">
+                                        <div class="table-responsive header-space">
+                                            <app-pagination-header></app-pagination-header>
+                                            <table matSort (matSortChange)="sortData($event)" class="table table-hover table-center mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th mat-sort-header="invoiceNo">Invoice No</th>
+                                                        <th mat-sort-header="doctor">Doctor</th>
+                                                        <th mat-sort-header="amount">Amount</th>
+                                                        <th mat-sort-header="paidOn">Paid On</th>
+                                                        <th mat-sort-header="action">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr *ngFor = "let data of tableData4">
+                                                        <td>
+                                                            <a [routerLink] = "routes.invoiceView">{{data.invoiceNo}}</a>
+                                                        </td>
+                                                        <td>
+                                                            <h2 class="table-avatar">
+                                                                <a [routerLink] = "routes.doctorProfile" class="avatar avatar-sm me-2">
+                                                                    <img class="avatar-img rounded-circle" [src]="data.img" alt="User Image">
+                                                                </a>
+                                                                <a [routerLink] = "routes.doctorProfile">{{data.doctor}} <span>{{data.specialist}}</span></a>
+                                                            </h2>
+                                                        </td>
+                                                        <td>{{data.amount}}</td>
+                                                        <td>{{data.paidOn}}</td>
+                                                        <td>
+                                                            <div class="table-action">
+                                                                <a [routerLink] = "routes.invoiceView" class="btn btn-sm bg-info-light me-1">
+                                                                    <i class="far fa-eye"></i> {{data.action1}}
+                                                                </a>
+                                                                <a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+                                                                    <i class="fas fa-print"></i> {{data.action2}}
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <app-custom-pagination></app-custom-pagination>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Billing Tab -->
+                              
+                        </div>
+                        <!-- Tab Content -->
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

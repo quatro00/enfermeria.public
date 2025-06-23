@@ -1,0 +1,700 @@
+<app-header></app-header>
+
+<!-- Home Banner -->
+<section class="banner-section-thirteen common-padding aos" data-aos="fade-down">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="banner-content aos" data-aos="fade-up" data-aos-duration="2000">
+                    <h4>We specialize in Paediatric Care</h4>
+                    <h1>A Safe Care for your children’s health</h1>
+                    <p>Supporting you to keep your child healthy with easy access to high-quality paediatric
+                        care.</p>
+                    <div class="banner-btns-fourteen ">
+                        <a [routerLink] = "routes.search1" class="btn btn-primary ">Know More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="banner-center-img d-flex justify-content-center">
+                    <img src="assets/img/bg/home-13-banner-img.png" alt="Banner Image">
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="search-box-one search-box-thirteen aos" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="search-title">
+                        <h5>Fix Appointment</h5>
+                    </div>
+                    <form>
+                        <div class="search-input search-calendar-line-thirteen">
+                            <i class="feather icon-calendar"></i>
+                            <div class="mb-0">
+                                <input type="text"
+                                class="form-control"
+                                #dp="bsDatepicker"
+                                bsDatepicker [(bsValue)]="myDateValue">
+                            </div>
+                        </div>
+                        <div class="search-input search-line-thirteen">
+                            <i class="feather icon-user"></i>
+                            <mat-select [(ngModel)]="selectedValue1" [ngModelOptions]="{standalone: true}" panelClass="myPanelClass" class="select"  placeholder="English">
+                                <mat-option *ngFor="let data of selectedList1" [value]="data.value">
+                                {{data.value}}
+                                </mat-option>
+                            </mat-select>
+                        </div>
+                        <div class="search-input search-map-line-thirteen">
+                            <i class="feather icon-map-pin"></i>
+                            <div class="mb-0">
+                                <input type="text" class="form-control" placeholder="Location">
+                                <a class="current-loc-icon current_location" href="javascript:void(0);">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search-input search-users-line-thirteen">
+                            <i class="feather icon-users"></i>
+                            <mat-select [(ngModel)]="selectedValue2" [ngModelOptions]="{standalone: true}" panelClass="myPanelClass" class="select"  placeholder="English">
+                                <mat-option *ngFor="let data of selectedList2" [value]="data.value">
+                                {{data.value}}
+                                </mat-option>
+                            </mat-select>
+                        </div>
+                        <div class="form-search-btn">
+                            <button class="btn" (click)="navigation()" (keydown)="navigation()" tabindex="1" type="button">See Availability<i
+                                    class="feather icon-arrow-right ms-2"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-section-thirteen-bg">
+        <div class="banner-section-thirteen-bg-one">
+            <img src="assets/img/bg/pluse-1.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-two">
+            <img src="assets/img/bg/pluse-2.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-three">
+            <img src="assets/img/bg/pluse-4.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-four">
+            <img src="assets/img/bg/pluse-3.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-five">
+            <img src="assets/img/bg/pluse-3.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-six">
+            <img src="assets/img/bg/pulse-6.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-seven">
+            <img src="assets/img/bg/gold-star.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-eight">
+            <img src="assets/img/bg/pink-star.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-nine">
+            <img src="assets/img/bg/atom-bond.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-ten">
+            <img src="assets/img/bg/pulse-7.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-eleven">
+            <img src="assets/img/bg/atom-bond.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-thirteen">
+            <img src="assets/img/bg/pluse-white.png" alt="Pluse">
+        </div>
+        <div class="banner-section-thirteen-bg-fourteen">
+            <img src="assets/img/bg/star-1.png" alt="Star" class="img-fluid">
+        </div>
+        <div class="banner-section-thirteen-bg-fifteen aos" data-aos="fade-left">
+            <img src="assets/img/bg/cloud-1.png" alt="Cloud">
+        </div>
+        <div class="banner-section-thirteen-bg-sixteen aos" data-aos="fade-right">
+            <img src="assets/img/bg/cloud-2.png" alt="Cloud">
+        </div>
+        <div class="banner-section-thirteen-bg-seventeen">
+            <a href="javascript:">Trained paediatric doctors</a>
+        </div>
+        <div class="banner-section-thirteen-bg-eighteen">
+            <a href="javascript:">New Born Care</a>
+        </div>
+        <div class="banner-section-thirteen-bg-ninteen">
+            <a href="javascript:">Child care treatments</a>
+        </div>
+        <div class="banner-section-thirteen-bg-twenty">
+            <img src="assets/img/bg/baby-star.png" alt="Star">
+        </div>
+        <div class="banner-section-thirteen-bgs">
+            <img src="assets/img/bg/heart-1.png" alt="Star">
+        </div>
+    </div>
+</section>
+<!-- /Home Banner -->
+
+<!-- services Section -->
+<section class="services-section-thirteen common-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 aos" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section-header-thirteen">
+                    <div class="section-inner-thirteen">
+                        <img src="assets/img/icons/atom-bond2.svg" alt="Service">
+                    </div>
+                    <h2>Our Services</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-thirteen-main">
+                    <div class="service-thirteen-all">
+                        <div class="service-img-thirteen">
+                            <img src="assets/img/clinic/service-1.jpg" alt="Service">
+                        </div>
+                        <div class="service-inner-contents">
+                            <h5>Prenatal/New-born</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-thirteen-main">
+                    <div class="service-thirteen-all">
+                        <div class="service-img-thirteen">
+                            <img src="assets/img/clinic/service-2.jpg" alt="Service">
+                        </div>
+                        <div class="service-inner-contents">
+                            <h5>New-born examinate</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-thirteen-main">
+                    <div class="service-thirteen-all">
+                        <div class="service-img-thirteen">
+                            <img src="assets/img/clinic/service-3.jpg" alt="Service">
+                        </div>
+                        <div class="service-inner-contents">
+                            <h5>Vaccinations </h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-thirteen-main">
+                    <div class="service-thirteen-all">
+                        <div class="service-img-thirteen">
+                            <img src="assets/img/clinic/service-4.jpg" alt="Service">
+                        </div>
+                        <div class="service-inner-contents">
+                            <h5>Blood tests</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-thirteen-main">
+                    <div class="service-thirteen-all">
+                        <div class="service-img-thirteen">
+                            <img src="assets/img/clinic/service-5.jpg" alt="Service">
+
+                        </div>
+                        <div class="service-inner-contents">
+                            <h5>diagnostic tests</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-thirteen-main">
+                    <div class="service-thirteen-all">
+                        <div class="service-img-thirteen">
+                            <img src="assets/img/features/feature-01.jpg" alt="Service">
+                        </div>
+                        <div class="service-inner-contents">
+                            <h5>Home visits</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /services Section -->
+
+<!-- Our Doctors -->
+<div class="our-doctor-thirteen common-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 aos" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section-header-thirteen">
+                    <div class="section-inner-thirteen">
+                        <img src="assets/img/icons/atom-bond2.svg" alt="Bond">
+                    </div>
+                    <h2>Our Doctors</h2>
+                </div>
+            </div>
+        </div>
+        <div class="our-slider-thirteen owl-theme aos" data-aos="fade-up" data-aos-duration="2000">
+            <owl-carousel-o [options]="ourSliderOptions">
+                <ng-template carouselSlide>
+                <div class="our-doctor-thirteen-all">
+                    <div class="our-doctor-thirteen-img">
+                        <img src="assets/img/doctors/doctor-25.png" alt="Doctor" class="img-fluid">
+                    </div>
+                    <div class="our-doctor-content">
+                        <a [routerLink] = "routes.doctorProfile">Gloria Smith</a>
+                        <div class="our-doctor-content-inner">
+                            <span>Paediatrician</span>
+                            <div class="reviews-ratings">
+                                <p>
+                                    <span><i class="fas fa-star"></i> 4.1</span> (3621)
+                                </p>
+                            </div>
+                        </div>
+                        <h6>+1500 Patients</h6>
+                        <p><i class="fa-solid fa-location-dot"></i> New York, USA</p>
+                        <div class="our-doctor-thirteen-imgone">
+                            <img src="assets/img/icons/add-circle.png" alt="Circle" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="our-doctor-thirteen-all">
+                    <div class="our-doctor-thirteen-img">
+                        <img src="assets/img/doctors/doctor-27.png" alt="Doctor" class="img-fluid">
+                    </div>
+                    <div class="our-doctor-content">
+                        <a [routerLink] = "routes.doctorProfile">Mark E. Wong</a>
+                        <div class="our-doctor-content-inner">
+                            <span>Paediatrician</span>
+                            <div class="reviews-ratings">
+                                <p>
+                                    <span><i class="fas fa-star"></i> 4.0</span> (1053)
+                                </p>
+                            </div>
+                        </div>
+                        <h6>+1500 Patients</h6>
+                        <p><i class="fa-solid fa-location-dot"></i> Mexico, USA</p>
+                        <div class="our-doctor-thirteen-imgone">
+                            <img src="assets/img/icons/add-circle.png" alt="Circle" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="our-doctor-thirteen-all">
+                    <div class="our-doctor-thirteen-img">
+                        <img src="assets/img/doctors/doctor-25.png" alt="Doctor" class="img-fluid">
+                    </div>
+                    <div class="our-doctor-content">
+                        <a [routerLink] = "routes.doctorProfile">William M. Williams</a>
+                        <div class="our-doctor-content-inner">
+                            <span>Paediatrician</span>
+                            <div class="reviews-ratings">
+                                <p>
+                                    <span><i class="fas fa-star"></i> 4.5</span> (3500)
+                                </p>
+                            </div>
+                        </div>
+                        <h6>+6500 Patients</h6>
+                        <p><i class="fa-solid fa-location-dot"></i> Los Angels, USA</p>
+                        <div class="our-doctor-thirteen-imgone">
+                            <img src="assets/img/icons/add-circle.png" alt="Circle" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="our-doctor-thirteen-all">
+                    <div class="our-doctor-thirteen-img">
+                        <img src="assets/img/doctors/doctor-26.png" alt="Doctor" class="img-fluid">
+                    </div>
+                    <div class="our-doctor-content">
+                        <a [routerLink] = "routes.doctorProfile">Gloria Smith</a>
+                        <div class="our-doctor-content-inner">
+                            <span>Paediatrician</span>
+                            <div class="reviews-ratings">
+                                <p>
+                                    <span><i class="fas fa-star"></i> 4.5</span> (35)
+                                </p>
+                            </div>
+                        </div>
+                        <h6>+1500 Patients</h6>
+                        <p><i class="fa-solid fa-location-dot"></i> Mexico, USA</p>
+                        <div class="our-doctor-thirteen-imgone">
+                            <img src="assets/img/icons/add-circle.png" alt="Circle" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="our-doctor-thirteen-all">
+                    <div class="our-doctor-thirteen-img">
+                        <img src="assets/img/doctors/doctor-25.png" alt="Doctor" class="img-fluid">
+                    </div>
+                    <div class="our-doctor-content">
+                        <a [routerLink] = "routes.doctorProfile">Gloria Smith</a>
+                        <div class="our-doctor-content-inner">
+                            <span>Paediatrician</span>
+                            <div class="reviews-ratings">
+                                <p>
+                                    <span><i class="fas fa-star"></i> 4.1</span> (3621)
+                                </p>
+                            </div>
+                        </div>
+                        <h6>+1500 Patients</h6>
+                        <p><i class="fa-solid fa-location-dot"></i> New York, USA</p>
+                        <div class="our-doctor-thirteen-imgone">
+                            <img src="assets/img/icons/add-circle.png" alt="Circle" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="our-doctor-thirteen-all">
+                    <div class="our-doctor-thirteen-img">
+                        <img src="assets/img/doctors/doctor-27.png" alt="Doctor" class="img-fluid">
+                    </div>
+                    <div class="our-doctor-content">
+                        <a [routerLink] = "routes.doctorProfile">Mark E. Wong</a>
+                        <div class="our-doctor-content-inner">
+                            <span>Paediatrician</span>
+                            <div class="reviews-ratings">
+                                <p>
+                                    <span><i class="fas fa-star"></i> 4.0</span> (1053)
+                                </p>
+                            </div>
+                        </div>
+                        <h6>+1500 Patients</h6>
+                        <p><i class="fa-solid fa-location-dot"></i> Mexico, USA</p>
+                        <div class="our-doctor-thirteen-imgone">
+                            <img src="assets/img/icons/add-circle.png" alt="Circle" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="our-doctor-thirteen-all">
+                    <div class="our-doctor-thirteen-img">
+                        <img src="assets/img/doctors/doctor-25.png" alt="Doctor" class="img-fluid">
+                    </div>
+                    <div class="our-doctor-content">
+                        <a [routerLink] = "routes.doctorProfile">William M. Williams</a>
+                        <div class="our-doctor-content-inner">
+                            <span>Paediatrician</span>
+                            <div class="reviews-ratings">
+                                <p>
+                                    <span><i class="fas fa-star"></i> 4.5</span> (3500)
+                                </p>
+                            </div>
+                        </div>
+                        <h6>+6500 Patients</h6>
+                        <p><i class="fa-solid fa-location-dot"></i> Los Angels, USA</p>
+                        <div class="our-doctor-thirteen-imgone">
+                            <img src="assets/img/icons/add-circle.png" alt="Circle" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <div class="our-doctor-thirteen-one">
+        <img src="assets/img/bg/pluse-1.png" alt="pluse">
+        <img src="assets/img/bg/pluse-3.png" alt="pluse">
+        <img src="assets/img/bg/pluse-2.png" alt="pluse">
+        <img src="assets/img/bg/pluse-3.png" alt="pluse">
+    </div>
+</div>
+<!-- /Our Doctors -->
+
+<!-- Why Choose Us -->
+<section class="choose-us-section-thirteen common-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 aos" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section-header-thirteen">
+                    <div class="section-inner-thirteen">
+                        <img src="assets/img/icons/atom-bond2.svg" alt="Bond">
+                    </div>
+                    <h2>Why Choose Us?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="choose-us-inner-all">
+                    <div class="choose-us-thirteen-img">
+                        <img src="assets/img/bg/doctor-bg.jpg" alt="Doctor" class="img-fluid">
+                        <div class="choose-us-thirteen-imgone">
+                            <img src="assets/img/bg/atom-bond.png" alt="Doctor">
+                            <img src="assets/img/bg/rainbow-2.png" alt="Doctor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <ul>
+                    <li>
+                        <div class="choose-us-content-thirteen">
+                            <div class="chooseus-contents">
+                                <i class="feather icon-upload-cloud"></i>
+                            </div>
+                            <div class="chooseus-content-ryt">
+                                <h5>latest diagnostics and technology</h5>
+                                <p>Porttitor tempor consequat tristique faucibus netus massa. 
+                                    Auctor nibh faucibus felis mauris vitae. Morbi </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="choose-us-content-thirteen">
+                            <div class="chooseus-contents">
+                                <i class="feather icon-underline"></i>
+                            </div>
+                            <div class="chooseus-content-ryt">
+                                <h5>immunisation clinic</h5>
+                                <p>Massa donec vivamus ultrices nascetur velit egestas. 
+                                    Augue facilisis sed at mattis ac auctor a feugiat sed. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="choose-us-content-thirteen">
+                            <div class="chooseus-contents">
+                                <i class="feather icon-type"></i>
+                            </div>
+                            <div class="chooseus-content-ryt">
+                                <h5>full breadth of paediatric care</h5>
+                                <p>Erat sed ut porta ultrices. Tincidunt vulputate justo, 
+                                    interdum imperdiet viverra in non, eu. In tortor odio in  </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="choose-us-content-thirteen">
+                            <div class="chooseus-contents">
+                                <i class="feather icon-message-square"></i>
+                            </div>
+                            <div class="chooseus-content-ryt">
+                                <h5>paediatric theatres on every ward</h5>
+                                <p>Tincidunt laoreet ultricies vulputate congue sagittis dignissim orci, sapien ridiculus. Magna tincidunt arcu a.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Why Choose Us -->
+
+<section class="client-us-section-thirteen common-padding">
+    <div class="client-us-section-thirteenone aos" data-aos="fade-right">
+        <img src="assets/img/bg/cloud-2.png" alt="Cloud">
+        <img src="assets/img/bg/rainbow-2.png" alt="Rainbow">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 aos" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section-header-thirteen">
+                    <div class="section-inner-thirteen">
+                        <img src="assets/img/icons/atom-bond2.svg" alt="Bond">
+                    </div>
+                    <h2>What Our Client Says?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="client-says-thirteen owl-theme">
+            <owl-carousel-o [options]="clientSaysOptions">
+                <ng-template carouselSlide>
+                <div class="client-says-all">
+                    <div class="clients-says-content">
+                        <p>"I would like to thank everyone at Doccure for the fantastic way you looked after me. 
+                            I could not fault anyone during the time I spent with you - from the point I arrived in reception, 
+                            to the catering team and every member of staff throughout the changes of shift during my stay."</p>
+                        <h4>
+                            Courtney Henry
+                        </h4>
+                        <p class="location-thirteen"><i class="fa-solid fa-location-dot"></i> New York, USA</p>
+                        <div class="client-says-imagesone">
+                            <img src="assets/img/icons/rainbow-3.svg" alt="Rainbow">
+                            <img src="assets/img/icons/rainbow-4.svg" alt="Rainbow">
+                        </div>
+                    </div>
+                    <div class="client-says-images">
+                        <img src="assets/img/bg/clients-says.jpg" alt="img-fluid">
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="client-says-all">
+                    <div class="clients-says-content">
+                        <p>"I would like to thank everyone at Doccure for the fantastic way you looked after me. 
+                            I could not fault anyone during the time I spent with you - from the point I arrived in reception, 
+                            to the catering team and every member of staff throughout the changes of shift during my stay."</p>
+                        <h4>
+                            Courtney Henry
+                        </h4>
+                        <p class="location-thirteen"><i class="fa-solid fa-location-dot"></i> New York, USA</p>
+                        <div class="client-says-imagesone">
+                            <img src="assets/img/icons/rainbow-3.svg" alt="Rainbow">
+                            <img src="assets/img/icons/rainbow-4.svg" alt="Rainbow">
+                        </div>
+                    </div>
+                    <div class="client-says-images">
+                        <img src="assets/img/clients/re-image-7.jpg" alt="img-fluid">
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="client-says-all">
+                    <div class="clients-says-content">
+                        <p>"I would like to thank everyone at Doccure for the fantastic way you looked after me. 
+                            I could not fault anyone during the time I spent with you - from the point I arrived in reception, 
+                            to the catering team and every member of staff throughout the changes of shift during my stay."</p>
+                        <h4>
+                            Courtney Henry
+                        </h4>
+                        <p class="location-thirteen"><i class="fa-solid fa-location-dot"></i> New York, USA</p>
+                        <div class="client-says-imagesone">
+                            <img src="assets/img/icons/rainbow-3.svg" alt="Rainbow">
+                            <img src="assets/img/icons/rainbow-4.svg" alt="Rainbow">
+                        </div>
+                    </div>
+                    <div class="client-says-images">
+                        <img src="assets/img/clients/re-image-8.jpg" alt="img-fluid">
+                    </div>
+                </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Articles -->
+<section class="latest-articles-thirteen common-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 aos" data-aos="fade-up" data-aos-duration="2000">
+                <div class="section-header-thirteen">
+                    <div class="section-inner-thirteen">
+                        <img src="assets/img/icons/atom-bond2.svg" alt="Bond">
+                    </div>
+                    <h2>Our Latest Articles</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="articles-thirteen">
+                    <div class="articles-thirteen-img">
+                        <a [routerLink] = "routes.blogDetails"><img src="assets/img/patients/articles-1.jpg" alt="Articles" class="img-fluid"></a>
+                    </div>
+                    <div class="articles-thirteen-content">
+                        <h6>Paediatrician</h6>
+                        <a [routerLink] = "routes.blogDetails">Our experts will take care of your child...</a>
+                        <p>In the first of this series focused on the prevention and treatment of running injuries, 
+                            Physiotherapist 
+                            looks at how runners can prevent injuries by identifying vulnerable muscles through an easy Movement Control Assessment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="articles-thirteen">
+                    <div class="articles-thirteen-img">
+                        <a [routerLink] = "routes.blogDetails"><img src="assets/img/patients/articles-2.jpg" alt="Articles" class="img-fluid"></a>
+                    </div>
+                    <div class="articles-thirteen-content">
+                        <h6>Paediatrician</h6>
+                        <a [routerLink] = "routes.blogDetails">We Care for your Children Most Effective Treatment</a>
+                        <p>In the first of this series focused on the prevention and treatment of running injuries, 
+                            Physiotherapist 
+                            looks at how runners can prevent injuries by identifying vulnerable muscles through an easy Movement Control Assessment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="articles-thirteen">
+                    <div class="articles-thirteen-img">
+                        <a [routerLink] = "routes.blogDetails"><img src="assets/img/patients/articles-3.jpg" alt="Articles" class="img-fluid"></a>
+                    </div>
+                    <div class="articles-thirteen-content">
+                        <h6>Paediatrician</h6>
+                        <a [routerLink] = "routes.blogDetails">The first step of the toddler
+                            Beyond </a>
+                        <p>In the first of this series focused on the prevention and treatment of running injuries, 
+                            Physiotherapist 
+                            looks at how runners can prevent injuries by identifying vulnerable muscles through an easy Movement Control Assessment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="articles-thirteen">
+                    <div class="articles-thirteen-img">
+                        <a [routerLink] = "routes.blogDetails"><img src="assets/img/patients/articles-4.jpg" alt="Articles" class="img-fluid"></a>
+                    </div>
+                    <div class="articles-thirteen-content">
+                        <h6>Paediatrician</h6>
+                        <a [routerLink] = "routes.blogDetails">Balanced Diet Chart for Children</a>
+                        <p>In the first of this series focused on the prevention and treatment of running injuries, 
+                            Physiotherapist 
+                            looks at how runners can prevent injuries by identifying vulnerable muscles through an easy Movement Control Assessment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Latest Articles -->
+
+<!-- Feedback -->
+<section class="feedback-section-thirteen common-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="feedback-main-thirteen">
+                    <div class="feedback-all-img">
+                        <img src="assets/img/feedback-inner.png" alt="image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="feedback-main-content">
+                    <h2>Download <br>The Doccure App Today!</h2>
+                    <p>Rasakan kemudahan pembayaran melalui aplikasi SmartInPays.  
+                        Jalan-jalan, membayar tagihan, donasi di ujung jari Anda. </p>
+                    <div class="feedback-inner-img">
+                        <div class="feedback-inner-imgone">
+                            <a href="javascript:"><img src="assets/img/app-store-1.png" alt="Store"></a>
+                        </div>
+                        <div class="feedback-inner-imgtwo">
+                            <a href="javascript:"><img src="assets/img/google-store-1.png" alt="Store"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-bg-icons">
+        <img src="assets/img/bg/pluse-1.png" alt="Pluse">
+        <img src="assets/img/bg/pluse-2.png" alt="Pluse">
+        <img src="assets/img/bg/pluse-3.png" alt="Pluse">
+        <img src="assets/img/bg/pluse-3.png" alt="Pluse">
+        <img src="assets/img/bg/pluse-1.png" alt="Pluse">
+    </div>
+</section>
+<!-- Feedback -->
+
+<app-footer></app-footer>

@@ -1,0 +1,1029 @@
+<!-- Add Modal -->
+<div class="modal fade" id="Add_Specialities_details" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Category</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="category" class="mb-2">Category</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Add Modal -->
+
+<!-- Edit Details Modal -->
+<div class="modal fade" id="edit_specialities_details" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Category</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="category" class="mb-2">Category</label>
+                                <input type="text" class="form-control" value="Cardiology">
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Edit Details Modal -->
+
+<!-- Delete Modal -->
+<div class="modal fade" id="delete_modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="form-content p-2">
+                    <h4 class="modal-title">Delete</h4>
+                    <p class="mb-4">Are you sure want to delete?</p>
+                    <button type="button" class="btn btn-primary me-1">Yes </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Delete Modal -->
+
+<!-- Payment Request Moodal -->
+<div class="modal fade custom-modal" id="payment_request_modal" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Payment Request</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="payment_request_form" method="post">
+                    <input type="hidden" name="payment_type" id="payment_type" value="1">
+                    <div class="mb-3">
+                        <label for="request-amount" class="mb-2">Request Amount</label>
+                        <input type="text" name="request_amount" id="request_amount" class="form-control" maxlength="6"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="mb-2">Description (Optional)</label>
+                        <textarea class="form-control" name="description" id="description"></textarea>
+                        <span class="help-block"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="submit" id="request_btn" class="btn btn-primary">Request</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Payment Request Moodal -->
+
+<!-- Account Details Modal-->
+<div class="modal fade custom-modal" id="account_modal" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Account Details</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="accounts_form" method="post">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="bank-name" name="bank-name" class="control-label mb-2">Bank Name</label>
+                                <input type="text" name="bank_name" class="form-control bank_name"
+                                    value="Wells Fargo & Co">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="branch-name" class="control-label mb-2">Branch Name</label>
+                                <input type="text" name="branch_name" class="form-control branch_name" value="Lenexa">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="account-number" class="control-label mb-2">Account Number</label>
+                                <input type="text" name="account_no" class="form-control account_no"
+                                    value="5396 5250 1908 3838">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="account-name" class="control-label mb-2">Account Name</label>
+                                <input type="text" name="account_name" class="form-control acc_name"
+                                    value="Dr. Darren Elder">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="submit" id="acc_btn" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Account Details Modal-->
+
+<!-- Appointment Details Modal -->
+<div class="modal fade custom-modal" id="appt_details">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Appointment Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="info-details">
+                    <li>
+                        <div class="details-header">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <span class="title">#APT0001</span>
+                                    <span class="text">21 Oct 2023 10:00 AM</span>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-end">
+                                        <button type="button" class="btn bg-success-light btn-sm"
+                                            id="topup_status">Completed</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="title">Status:</span>
+                        <span class="text">Completed</span>
+                    </li>
+                    <li>
+                        <span class="title">Confirm Date:</span>
+                        <span class="text">29 Jun 2023</span>
+                    </li>
+                    <li>
+                        <span class="title">Paid Amount</span>
+                        <span class="text">$450</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Appointment Details Modal -->
+
+<!-- Voice Call Modal -->
+<div class="modal fade call-modal" id="voice_call">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <!-- Outgoing Call -->
+                <div class="call-box incoming-box">
+                    <div class="call-wrapper">
+                        <div class="call-inner">
+                            <div class="call-user">
+                                <img alt="User Image" src="assets/img/doctors/doctor-thumb-02.jpg" class="call-avatar">
+                                <h4>Darren Elder</h4>
+                                <span>Connecting...</span>
+                            </div>
+                            <div class="call-items">
+                                <a href="javascript:void(0);" class="btn call-item call-end" data-bs-dismiss="modal"
+                                    aria-label="Close"><i class="material-icons">call_end</i></a>
+                                <a [routerLink]="routes.voiceCall" class="btn call-item call-start"><i
+                                        class="material-icons">call</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Outgoing Call -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Voice Call Modal -->
+
+<!-- Video Call Modal -->
+<div class="modal fade call-modal" id="video_call">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+
+                <!-- Incoming Call -->
+                <div class="call-box incoming-box">
+                    <div class="call-wrapper">
+                        <div class="call-inner">
+                            <div class="call-user">
+                                <img class="call-avatar" src="assets/img/doctors/doctor-thumb-02.jpg" alt="User Image">
+                                <h4>Darren Elder</h4>
+                                <span>Calling ...</span>
+                            </div>
+                            <div class="call-items">
+                                <a href="javascript:void(0);" class="btn call-item call-end" data-bs-dismiss="modal"
+                                    aria-label="Close"><i class="material-icons">call_end</i></a>
+                                <a [routerLink]="routes.videoCall" class="btn call-item call-start"><i
+                                        class="material-icons">videocam</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Incoming Call -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Video Call Modal -->
+
+<!-- Add Dependent Modal-->
+<div id="modal_form" class="modal fade custom-modal" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form action="#" enctype="multipart/form-data" autocomplete="off" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add new member</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="name" class="control-label mb-10"> Name <span class="text-danger">*</span></label>
+                        <input type="text" name="name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="relationship" class="control-label mb-10">Relationship </label>
+                        <input type="text" name="relationship" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="control-label mb-10">Gender </label>
+                        <select class="form-select form-control" name="gender">
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dob" class="control-label mb-10">DOB </label>
+                        <input type="text" name="dob" id="dob" value="" readonly="" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="photo" class="control-label mb-10">Photo </label>
+                        <input type="file" name="profile_image" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="submit" class="btn btn-primary submit-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Add Dependent Modal-->
+
+<!-- Edit Dependent Modal-->
+<div id="edit_form" class="modal fade custom-modal" tabindex="-1" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form action="#" enctype="multipart/form-data" autocomplete="off" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit member</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="name" class="control-label mb-10"> Name <span class="text-danger">*</span></label>
+                        <input type="text" name="name" class="form-control" value="Christopher">
+                    </div>
+                    <div class="mb-3">
+                        <label for="relationship" class="control-label mb-10">Relationship </label>
+                        <input type="text" name="relationship" class="form-control" value="son">
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="control-label mb-10">Gender </label>
+                        <select class="form-select form-control" name="gender">
+                            <option value="">Select</option>
+                            <option value="Male" selected>Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dob" class="control-label mb-10">DOB </label>
+                        <input type="text" name="dob" id="editdob" value="01/12/2023" readonly="" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="photo" class="control-label mb-10">Photo </label>
+                        <input type="file" name="profile_image" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="submit" class="btn btn-primary submit-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Edit Dependent Modal-->
+
+<!-- Add Medical Detail -->
+<div id="modal_medical_form" class="modal fade custom-modal" tabindex="-1" role="dialog" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form action="#" enctype="multipart/form-data" autocomplete="off" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add new data</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" value="" name="id">
+                    <input type="hidden" value="insert" name="method">
+                    <div class="mb-3">
+                        <label for="bmi" class="control-label mb-10"> BMI <span class="text-danger">*</span></label>
+                        <input type="text" name="bmi" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="heart-rate" class="control-label mb-10">Heart rate </label>
+                        <input type="text" name="hr" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="weight" class="control-label mb-10">Weight</label>
+                        <input type="text" name="Weight" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fbc" class="control-label mb-10">Fbc</label>
+                        <input type="text" id="Fbc" name="Fbc" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="created-date" class="control-label mb-10">Created Date </label>
+                        <input type="text" name="dob" id="dob" value="" readonly="" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="submit" class="btn btn-outline btn-success ">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Add Medical Detail -->
+
+<!-- Edit Medical Detail -->
+<div id="edit_medical_form" class="modal fade custom-modal" tabindex="-1" role="dialog" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form action="#" enctype="multipart/form-data" autocomplete="off" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add new data</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" value="" name="id">
+                    <input type="hidden" value="insert" name="method">
+                    <div class="mb-3">
+                        <label for="bmi" class="control-label mb-10"> BMI <span class="text-danger">*</span></label>
+                        <input type="text" name="bmi" class="form-control" value="23.7">
+                    </div>
+                    <div class="mb-3">
+                        <label for="heart-rate" class="control-label mb-10">Heart rate </label>
+                        <input type="text" name="hr" class="form-control" value="89">
+                    </div>
+                    <div class="mb-3">
+                        <label for="weight" class="control-label mb-10">Weight</label>
+                        <input type="text" name="Weight" class="form-control" value="74">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fbc" class="control-label mb-10">Fbc</label>
+                        <input type="text" name="Fbc" class="form-control" value="140">
+                    </div>
+                    <div class="mb-3">
+                        <label for="created-date" class="control-label mb-10">Created Date </label>
+                        <input type="text" name="dob" id="editdob" value="11/11/2023" readonly="" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="submit" class="btn btn-outline btn-success ">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Edit Medical Detail -->
+
+<!-- Medical Records Modal -->
+<div class="modal fade custom-modal custom-medicalrecord-modal" id="add_medical_records_modal" style="display: none;"
+    data-select2-id="add_medical_records_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Medical Records</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <form id="medical_records_form" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <label class="mb-2" for="title-name">Title Name</label>
+                                <input type="text" name="description" class="form-control"
+                                    placeholder="Enter Title Name">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <label for="patient" class="mb-2">Patient</label>
+                                <input type="text" name="description" class="form-control"
+                                    placeholder="Enter Patient Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="hospital-name" class="mb-2">Hospital Name</label>
+                                <input type="text" name="hospital" class="form-control" placeholder="Enter name here..">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="upload" class="mb-2">Upload</label>
+                                <div class="upload-medical-records">
+                                    <input class="form-control" type="file" name="user_file" id="user_files_mr">
+                                    <div class="upload-content dropzone">
+                                        <div>
+                                            <div class="upload-icon mb-2"><img src="assets/img/upload-icon.png"
+                                                    alt="upload-icon"></div>
+                                            <h5>Drag &amp; Drop</h5>
+                                            <h6>or <span class="text-danger">Browse</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label class="mb-2" for="symptoms">Symptoms</label>
+                                <input type="text" data-role="tagsinput" class="input-tags form-control"
+                                    value="Fever, Fatigue" name="services" id="services">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <label for="date" class="mb-2">Date</label>
+                                <div class="mb-3" class="modal-date-picker">
+                                    <div class="cal-icon">
+                                        <input type="text"
+                                        class="form-control"
+                                        #dp="bsDatepicker"
+                                        bsDatepicker [(bsValue)]="myDateValue">
+                                    </div>
+                                     <input type="date" class="form-control" name="tratment_date" id="tratment_date"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <div class="submit-section text-center">
+                            <button type="submit" id="medical_btn" class="btn btn-primary submit-btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Medical Records Modal -->
+
+<!-- Add Medical Records Modal -->
+<div class="modal fade custom-modal" id="add_medical_records">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Medical Records</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="date" class="mb-2">Date</label>
+                        <!-- <ngx-datepicker [ngModelOptions]="{standalone: true}" class="form-control" type="date"
+                            [(ngModel)]="date"></ngx-datepicker> -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="mb-2">Description ( Optional )</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="upload-file" class="upload-file" class="mb-2">Upload File</label>
+                        <input type="file" class="form-control">
+                    </div>
+                    <div class="submit-section text-center">
+                        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+                        <button type="button" class="btn btn-secondary submit-btn"
+                            data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- /Add Medical Records Modal -->
+
+<!-- Graph One-->
+<div class="modal fade custom-modal" id="graph1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">BMI Status</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">                        
+                        <div id="bmi-status">
+                            <apx-chart class="singleline-chart-apex" [series]="chartOptionsOne.series"
+                                [chart]="chartOptionsOne.chart" [xaxis]="chartOptionsOne.xaxis"
+                                [dataLabels]="chartOptionsOne.dataLabels" [grid]="chartOptionsOne.grid"
+                                [stroke]="chartOptionsOne.stroke" [title]="chartOptionsOne.title">
+                            </apx-chart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Graph One-->
+
+<!-- Graph Two-->
+<div class="modal fade custom-modal" id="graph2">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Heart Rate Status</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="heartrate-status">
+                    <apx-chart class="singleline-chart-apex" [series]="chartOptionsTwo.series"
+                        [chart]="chartOptionsTwo.chart" [xaxis]="chartOptionsTwo.xaxis"
+                        [dataLabels]="chartOptionsTwo.dataLabels" [grid]="chartOptionsTwo.grid"
+                        [stroke]="chartOptionsTwo.stroke" [title]="chartOptionsTwo.title">
+                    </apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Graph Two-->
+
+<!-- Graph Two-->
+<div class="modal fade custom-modal" id="graph3">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">FBC Status</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="fbc-status">
+                    <apx-chart class="singleline-chart-apex" [series]="chartOptionsThree.series"
+                        [chart]="chartOptionsThree.chart" [xaxis]="chartOptionsThree.xaxis"
+                        [dataLabels]="chartOptionsThree.dataLabels" [grid]="chartOptionsThree.grid"
+                        [stroke]="chartOptionsThree.stroke" [title]="chartOptionsThree.title">
+                    </apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Graph Two-->
+
+<!-- Graph Two-->
+<div class="modal fade custom-modal" id="graph4">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Weight Status</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="weight-status">
+                    <apx-chart class="singleline-chart-apex" [series]="chartOptionsFour.series"
+                        [chart]="chartOptionsFour.chart" [xaxis]="chartOptionsFour.xaxis"
+                        [dataLabels]="chartOptionsFour.dataLabels" [grid]="chartOptionsFour.grid"
+                        [stroke]="chartOptionsFour.stroke" [title]="chartOptionsFour.title">
+                    </apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Graph Two-->
+
+<!-- Account Details Modal -->
+<div class="modal fade custom-modal" id="account_modal" role="dialog" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Account Details</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="accounts_form" method="post">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="bank-name" name="bank-name" class="control-label mb-2">Bank Name</label>
+                                <input type="text" name="bank_name" class="form-control bank_name"
+                                    value="Goldman Sachs">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="branch-name" class="control-label mb-2">Branch Name</label>
+                                <input type="text" name="branch_name" class="form-control branch_name"
+                                    value="Alpharetta">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="account-number" class="control-label mb-2">Account Number</label>
+                                <input type="text" name="account_no" class="form-control account_no"
+                                    value="4916 0606 4635 5064">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="account-name" class="control-label mb-2">Account Name</label>
+                                <input type="text" name="account_name" class="form-control acc_name"
+                                    value="Richard Wilson">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="submit" id="acc_btn" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Account Details Modal -->
+
+<!-- Payment Request Modal-->
+<div class="modal fade custom-modal" id="payment_request_modal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Payment Request</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="payment_request_form" method="post">
+                    <input type="hidden" name="payment_type" id="payment_type">
+                    <div class="mb-3">
+                        <label for="request-amount" class="mb-2">Request Amount</label>
+                        <input type="text" onkeyup="amount()" onblur="amount()" name="request_amount"
+                            id="request_amount" class="form-control" maxlength="6"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="mb-2">Description (Optional)</label>
+                        <textarea class="form-control" name="description" id="description"></textarea>
+                        <span class="help-block"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <button type="submit" id="request_btn" class="btn btn-primary">Request</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Payment Request Modal -->
+
+<!-- Add Time Slot Modal -->
+<div class="modal fade custom-modal" id="add_time_slot">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Time Slots</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="hours-info">
+                        <div class="row hours-cont" *ngFor="let data of hours; let i = index">
+                            <div class="col-12 col-md-10">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <label for="start-time">Start Time</label>
+                                            <select class="form-select form-control">
+                                                <option>-</option>
+                                                <option>12.00 am</option>
+                                                <option>12.30 am</option>
+                                                <option>1.00 am</option>
+                                                <option>1.30 am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <label for="end-time">End Time</label>
+                                            <select class="form-select form-control">
+                                                <option>-</option>
+                                                <option>12.00 am</option>
+                                                <option>12.30 am</option>
+                                                <option>1.00 am</option>
+                                                <option>1.30 am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2" *ngIf="i">
+                                <label for="" class="d-md-block d-sm-none d-none">&nbsp;</label><a href="javascript:void(0)"
+                                    class="btn btn-danger trash" (click)="dltHours(i)"><i
+                                        class="far fa-trash-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="add-more mb-3">
+                        <a href="javascript:void(0);" (click)="addHours()" class="add-hours"><i
+                                class="fa fa-plus-circle"></i> Add More</a>
+                    </div>
+                    <div class="submit-section text-center">
+                        <button type="submit" class="btn btn-primary submit-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Add Time Slot Modal -->
+
+<!-- Edit Time Slot Modal -->
+<div class="modal fade custom-modal" id="edit_time_slot">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Time Slots</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="hours-info">
+                        <div class="row hours-cont">
+                            <div class="col-12 col-md-10">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <label for="start-time" class="mb-2">Start Time</label>
+                                            <select class="form-select form-control">
+                                                <option>-</option>
+                                                <option selected>12.00 am</option>
+                                                <option>12.30 am</option>
+                                                <option>1.00 am</option>
+                                                <option>1.30 am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <label for="end-time" class="mb-2">End Time</label>
+                                            <select class="form-select form-control">
+                                                <option>-</option>
+                                                <option>12.00 am</option>
+                                                <option selected>12.30 am</option>
+                                                <option>1.00 am</option>
+                                                <option>1.30 am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hours-cont" *ngFor="let data of time1; let i = index">
+                            <div class="col-12 col-md-10">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <label for="start-time" class="mb-2">Start Time</label>
+                                            <select class="form-select form-control">
+                                                <option>-</option>
+                                                <option>12.00 am</option>
+                                                <option selected>12.30 am</option>
+                                                <option>1.00 am</option>
+                                                <option>1.30 am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <label for="end-time" class="mb-2">End Time</label>
+                                            <select class="form-select form-control">
+                                                <option>-</option>
+                                                <option>12.00 am</option>
+                                                <option>12.30 am</option>
+                                                <option selected>1.00 am</option>
+                                                <option>1.30 am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2"><label for="" class="d-md-block d-sm-none d-none">&nbsp;</label><a
+                                    href="javascript:void(0)" class="btn btn-danger trash mt-2" (click)="dltTime1(i)"><i
+                                        class="far fa-trash-alt"></i></a></div>
+                        </div>
+
+                        <div class="row hours-cont" *ngFor="let data of time2; let i = index">
+                            <div class="col-12 col-md-10">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <label for="start-time" class="mb-2">Start Time</label>
+                                            <select class="form-select form-control">
+                                                <option>-</option>
+                                                <option>12.00 am</option>
+                                                <option>12.30 am</option>
+                                                <option selected>1.00 am</option>
+                                                <option>1.30 am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="mb-3">
+                                            <label for="end-time" class="mb-2">End Time</label>
+                                            <select class="form-select form-control">
+                                                <option>-</option>
+                                                <option>12.00 am</option>
+                                                <option>12.30 am</option>
+                                                <option>1.00 am</option>
+                                                <option selected>1.30 am</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2"><label for="" class="d-md-block d-sm-none d-none">&nbsp;</label><a
+                                    href="javascript:void(0)" class="btn btn-danger trash mt-2" (click)="dltTime2(i)"><i
+                                        class="far fa-trash-alt"></i></a></div>
+                        </div>
+
+                        <div class="row hours-cont" *ngFor="let data of time3; let i = index">
+                            <ng-container *ngIf="i">
+                                <div class="col-12 col-md-10">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="mb-3">
+                                                <label for="start-time">Start Time</label>
+                                                <select class="form-select form-control">
+                                                    <option>-</option>
+                                                    <option>12.00 am</option>
+                                                    <option>12.30 am</option>
+                                                    <option>1.00 am</option>
+                                                    <option>1.30 am</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="mb-3">
+                                                <label for="end-time">End Time</label>
+                                                <select class="form-select form-control">
+                                                    <option>-</option>
+                                                    <option>12.00 am</option>
+                                                    <option>12.30 am</option>
+                                                    <option>1.00 am</option>
+                                                    <option>1.30 am</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-2">
+                                    <label for="" class="d-md-block d-sm-none d-none">&nbsp;</label><a
+                                        href="javascript:void(0)" class="btn btn-danger trash" (click)="dltTime3(i)"><i
+                                            class="far fa-trash-alt"></i></a>
+                                </div>
+                            </ng-container>
+                        </div>
+
+                    </div>
+
+                    <div class="add-more mb-3">
+                        <a href="javascript:void(0);" (click)="addTime3()" class="add-hours"><i
+                                class="fa fa-plus-circle"></i> Add More</a>
+                    </div>
+                    <div class="submit-section text-center">
+                        <button type="submit" class="btn btn-primary submit-btn">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Edit Time Slot Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="deleteConfirmModal" tabindex="-1" role="dialog" aria-labelledby="deleteConfirmModal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="acc_msg"></p>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0)" class="btn btn-success si_accept_confirm">Yes</a>
+                <button type="button" class="btn btn-danger si_accept_cancel" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="deleteNotConfirmModal" tabindex="-1" role="dialog" aria-labelledby="deleteNotConfirmModal"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="acc_title">Inactive Service?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="acc_msg1">Service is Booked and Inprogress..</p>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-danger si_accept_cancel" data-bs-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Modal -->

@@ -1,0 +1,28 @@
+<div class="main-wrapper" [ngClass]="{
+    'login-body':
+      page === 'admin-login' ||
+      page === 'admin-register' ||
+      page === 'admin-lock-screen' ||
+      page === 'admin-forgot-password' ||
+      page === 'pharmacy-login' ||
+      page === 'pharmacy-register' ||
+      page === 'pharmacy-lock-screen' ||
+      page === 'pharmacy-forgot-password',
+    'expand-menu': expandMenu === true && miniSidebar === true,
+    'mini-sidebar': miniSidebar === true,
+    'slide-nav': mobileSidebar === true,
+    'home-ten': base === 'home5',
+    'home-twelve': base === 'home7' || base === 'home8',
+    'home-fourteen': base === 'home9',
+    'home-thirteen': base === 'home8',
+    'home-sixteen' : base === 'home11',
+    'menu-opened': showMiniSidebar === true,
+    'profile-setting-class': page === 'profile-settings' || page === 'doctor-search-grid'  || page === 'doctor-profile-settings' || last === 'search2',
+    'login-content': page === 'admin-login' || page === 'admin-register' || page === 'lock-screen' || page === 'admin-forgot-password' || page === 'pharmacy-login'|| page === 'pharmacy-forgot-password'|| page === 'pharmacy-forgot-password' || page === 'pharmacy-register' ,
+    'home-pg-twelve': base === 'home12',
+    'pharmacy-body':page ==='pharmacy-index'
+    
+  }">
+  <router-outlet></router-outlet>
+</div>
+<app-modal></app-modal>
