@@ -58,6 +58,7 @@ export interface Menu {
 
 export interface header {
   tittle: string;
+  route: string;
   showAsTab: boolean;
   separateRoute: boolean;
   menu: Menu[];

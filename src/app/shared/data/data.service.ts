@@ -348,44 +348,44 @@ export class DataService {
       tittle: 'Inicio',
       showAsTab: false,
       separateRoute: false,
+      route: '#inicio',
       menu: [],
     },
     {
-      tittle: 'Quiene somos',
+      tittle: 'Quienes somos',
       showAsTab: false,
       separateRoute: false,
+      route: '#quienesSomos',
       menu: [],
     },
     {
       tittle: 'Nuestros servicios',
       showAsTab: false,
       separateRoute: false,
+      route: '#nuestrosServicios',
       menu: [],
     },
     {
-      tittle: 'Nuestro equipo',
+      tittle: 'Nuevos pacientes',
       showAsTab: false,
       separateRoute: false,
+      route: '#nuevosPacientes',
       menu: [],
     },
     {
       tittle: 'Preguntas frecuentes',
       showAsTab: false,
       separateRoute: false,
-      menu: [],
-    },
-    {
-      tittle: 'Contacto',
-      showAsTab: false,
-      separateRoute: false,
+      route: '#preguntasFrecuentes',
       menu: [],
     },
     {
       tittle: 'Bolsa de trabajo',
       showAsTab: false,
       separateRoute: false,
+      route: '#bolsaDeTrabajo',
       menu: [],
-    },
+    }
   ];
   public adminSidebar = [
     {

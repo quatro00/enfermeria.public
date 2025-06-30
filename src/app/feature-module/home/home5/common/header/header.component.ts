@@ -67,4 +67,11 @@ export class HeaderComponent {
   public navigation() {
     this.router.navigate([routes.search1]);
   }
+
+  scrollToSection(id: string) {
+  const el = document.querySelector(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
 }
