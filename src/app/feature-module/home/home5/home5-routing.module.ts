@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Home5Component } from './home5.component';
 
-const routes: Routes = [{ path: '', component: Home5Component }];
+const routes: Routes = [{ path: '', component: Home5Component,pathMatch: 'full' }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

@@ -47,6 +47,8 @@ export class FeatureModuleComponent implements OnInit, AfterViewInit{
       events.url.split('/')[1] === 'home3' ||
       events.url.split('/')[1] === 'home4' ||
       events.url.split('/')[1] === 'home5' ||
+      events.url.split('/')[1] === '' ||
+      events.url.split('/')[1] === 'home' ||
       events.url.split('/')[1] === 'home6' ||
       events.url.split('/')[1] === 'home7' ||
       events.url.split('/')[1] === 'home8' ||

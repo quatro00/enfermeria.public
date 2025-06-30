@@ -9,7 +9,8 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'home5',
+        loadChildren: () =>
+          import('./home5/home5.module').then((m) => m.Home5Module),
         pathMatch: 'full',
       },
       {
@@ -31,6 +32,11 @@ const routes: Routes = [
         path: 'home4',
         loadChildren: () =>
           import('./home4/home4.module').then((m) => m.Home4Module),
+      },
+      {
+        path: 'home',
+        loadChildren: () =>
+          import('./home5/home5.module').then((m) => m.Home5Module),
       },
       {
         path: 'home5',
